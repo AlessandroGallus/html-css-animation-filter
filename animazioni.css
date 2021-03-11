@@ -26,12 +26,10 @@
   transition: 1.5s;
 }
 .ex-5-square:hover{
-  width:100px;
-  height:100px;
+  transform: scale(2);
 }
 .ex-5-square:active{
-  width:25px;
-  height:25px;
+  transform: scale(0.5);
 }
 .ex-6-img:hover{
   filter: grayscale();
@@ -58,5 +56,28 @@
   border-radius: 15px;
   filter:grayscale(0.8);
   filter:sepia(0.8);
-  height: 200px;
+  transform: scale(1.3);
+}
+@keyframes giro{
+  0%{
+    transform: rotate(1turn);
+  };
+}
+.ex-10-icon{
+  animation: giro 1s linear infinite;
+}
+@keyframes girononcompleto{
+  0%{
+    transform: rotate(0);
+  }
+  75%{
+    transform: rotate(320deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+.ex-11-icon:hover{
+  animation: girononcompleto 2s
+   linear;
 }
