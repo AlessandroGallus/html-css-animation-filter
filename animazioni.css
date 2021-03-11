@@ -71,7 +71,7 @@
     transform: rotate(0);
   }
   75%{
-    transform: rotate(320deg);
+    transform: rotate(270deg);
   }
   100%{
     transform: rotate(0);
@@ -80,4 +80,82 @@
 .ex-11-icon:hover{
   animation: girononcompleto 2s
    linear;
+}
+@keyframes spostamentotoph{
+  0%{
+    left: 10%;
+  }
+  50%{
+    left: calc(100% - 80px);
+  }
+  100%{
+    left:10%;
+  }
+}
+  @keyframes spostamentobottomh{
+    0%{
+      left: calc(100% - 80px);
+    }
+    50%{
+      left: 10%;
+    }
+    100%{
+      left: calc(100% - 80px);
+    }
+  }
+.ex-12-button:hover .ex-12-top-white{
+  animation: spostamentotoph 1s linear infinite;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: spostamentobottomh 1s linear infinite;
+}
+@keyframes spostamentotopt{
+  0%{
+    left:-20px;
+    top:-20px;
+  }
+  25%{
+    left:100%;
+    top:-20px;
+  }
+  50%{
+    left:100%;
+    top:100%;
+  }
+  75%{
+    left:-20px;
+    top:100%;
+  }
+  100%{
+    left:-20px;
+    top:-20px;
+  }
+}
+.ex-13-button:hover .ex-13-top-white{
+  animation: spostamentotopt 2s linear infinite;
+}
+@keyframes spostamentobottomt{
+  0%{
+    right:-20px;
+    bottom:-20px;
+  }
+  25%{
+    right:100%;
+    bottom:-20px;
+  }
+  50%{
+    right:100%;
+    bottom:100%;
+  }
+  75%{
+    right:-20px;
+    bottom:100%;
+  }
+  100%{
+    rightt:-20px;
+    bottom:-20px;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: spostamentobottomt 2s linear infinite;
 }
